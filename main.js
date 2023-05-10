@@ -597,3 +597,22 @@ function previewCode() {
 
     previewFrame.contentWindow.eval(jsTextEditor.value)
 }
+
+// seeFullScreen
+
+const buttonseeFullScreen = document.getElementById('seeFullScreen')
+const buttonexitFullScreen = document.getElementById('exitFullScreen')
+const frameWrapper = document.querySelector('.frame-wrapper')
+const previewWrapper = document.querySelector('.preview-wrapper')
+
+
+buttonseeFullScreen.addEventListener('click', () => {
+    frameWrapper.classList.add('fullscreen')
+    frameWrapper.append(previewFrame)
+    previewCode()
+})
+buttonexitFullScreen.addEventListener('click', () => {
+    frameWrapper.classList.remove('fullscreen')
+    previewWrapper.append(previewFrame)
+    previewCode()
+})
