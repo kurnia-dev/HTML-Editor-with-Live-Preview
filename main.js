@@ -449,6 +449,8 @@ const cssCode = `* {
   .tabs-button {
     color: var(--3rd-text-color);
     width: 50%;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
   }
   
   .tabs-button.active {
@@ -593,5 +595,5 @@ function previewCode() {
         ${htmlTextEditor.value}
     </body>`
 
-    previewCode.contentWindow.eval(jsTextEditor.value)
+    previewFrame.contentWindow.eval(jsTextEditor.value)
 }
