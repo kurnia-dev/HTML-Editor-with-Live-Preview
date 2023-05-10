@@ -29,6 +29,7 @@ textarea {
   font-family: monospace;
   text-overflow: ellipsis;
   white-space: nowrap;
+  border: 1px solid #22232342;
 }
 
 label {
@@ -36,6 +37,29 @@ label {
   flex-direction: column;
   align-items: left;
   gap: 12px;
+}
+
+label span.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+label span.icon.html {
+  background: url(icon/html-5.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+label span.icon.css {
+  background: url(icon/css-3.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+label span.icon.js {
+  background: url(icon/js.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 iframe {
