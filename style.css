@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.code-editor {
+  max-width: 1024px;
+  padding: 20px 30px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.6em;
+}
+
+textarea {
+  padding: 10px;
+  font-family: monospace;
+  text-overflow: ellipsis;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 12px;
+}
+
+iframe {
+  border: 1px solid #22232342;
+  width: 100%;
+  min-height: 400px;
+}
